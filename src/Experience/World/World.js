@@ -1,6 +1,6 @@
 import Experience from '../Experience'
 import Environment from './Environment'
-import Example from './Example'
+import Computer from './Computer'
 
 export default class World
 {
@@ -14,11 +14,11 @@ export default class World
         this.resources.on('ready', () =>
         {
             // Setup if source
+            this.computer = new Computer()
         })
         
         // Setup if no source
         this.environment = new Environment()
-        this.example = new Example()
     }
     
     update()
