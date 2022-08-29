@@ -1,6 +1,7 @@
 import Experience from '../Experience'
 import Environment from './Environment'
 import Computer from './Computer'
+import Floor from './Floor'
 
 export default class World
 {
@@ -19,6 +20,7 @@ export default class World
         
         // Setup if no source
         this.environment = new Environment()
+        this.floor = new Floor()
     }
     
     update()
